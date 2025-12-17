@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react-todo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              md: {
+                bg: "var(--md-bg)",
+                on: "var(--md-on)",
+                primary: "rgb(var(--md-primary-rgb) / <alpha-value>)",
+                surface: "var(--md-surface)",
+                surfaceLow: "var(--md-surface-low)",
+                outline: "rgb(var(--md-outline-rgb) / <alpha-value>)",
+                onVariant: "rgb(var(--md-on-variant-rgb) / <alpha-value>)",
+                secondaryContainer:
+                  "rgb(var(--md-secondary-container-rgb) / <alpha-value>)",
+                onSecondaryContainer: "var(--md-on-secondary-container)",
+                dangerContainer: "var(--md-danger-container)",
+                onDangerContainer: "var(--md-on-danger-container)",
+                tertiary: "rgb(var(--md-tertiary-rgb) / <alpha-value>)",
+                info: "var(--md-info)",
+                onInfo: "var(--md-on-info)",
+                infoContainer: "var(--md-info-container)",
+                onInfoContainer: "var(--md-on-info-container)",
+                warning: "var(--md-warning)",
+                onWarning: "var(--md-on-warning)",
+                warningContainer: "var(--md-warning-container)",
+                onWarningContainer: "var(--md-on-warning-container)",
+                success: "var(--md-success)",
+                onSuccess: "var(--md-on-success)",
+                successContainer: "var(--md-success-container)",
+                onSuccessContainer: "var(--md-on-success-container)",
+              },
+            },
+            borderRadius: {
+              mdCard: "var(--md-radius-card)",
+              mdHero: "var(--md-radius-hero)",
+              mdInput: "var(--md-radius-input)",
+            },
+            transitionTimingFunction: {
+              md: "cubic-bezier(0.2,0,0,1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/static/pretendard.css"
+    />
+  </head>
+  <body class="bg-md-bg">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
